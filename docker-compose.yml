@@ -1,0 +1,8 @@
+services:
+  gifs-app:
+    image: gifs-app:1.0
+    build: .
+    container_name: gifs-app
+    ports:
+      - "8081:80"
+    restart: unless-stopped
